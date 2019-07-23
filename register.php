@@ -66,6 +66,8 @@ if(isset($_POST["register"]))
 				if($statement->execute($data))
 				{
 					$message = "<label>Registration Completed</label>";
+                                        echo '<meta http-equiv="refresh" content="1; URL=login.php" />';
+
 				}
 			}
 		}
@@ -76,7 +78,7 @@ if(isset($_POST["register"]))
 
 <html>  
     <head>  
-        <title>Chat Application using PHP Ajax Jquery</title>  
+        <title>GLB Chat Portal</title>  
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -86,10 +88,10 @@ if(isset($_POST["register"]))
         <div class="container">
 			<br />
 			
-			<h3 align="center">Chat Application using PHP Ajax Jquery</a></h3><br />
+			<h3 align="center">GLB Chat Portal</a></h3><br />
 			<br />
 			<div class="panel panel-default">
-  				<div class="panel-heading">Chat Application Register</div>
+  				<div class="panel-heading">Register Yourself</div>
 				<div class="panel-body">
 					<form method="post">
 						<span class="text-danger"><?php echo $message; ?></span>
@@ -106,7 +108,7 @@ if(isset($_POST["register"]))
 							<input type="password" name="confirm_password" class="form-control" />
 						</div>
 						<div class="form-group">
-							<input type="submit" name="register" class="btn btn-info" value="Register" />
+							<input type="submit" name="register" class="btn btn-info" value="Register"  />
 						</div>
 						<div align="center">
 							<a href="login.php">Login</a>

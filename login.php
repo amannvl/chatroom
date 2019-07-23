@@ -74,10 +74,10 @@ if(isset($_POST['login']))
         <div class="container">
 			<br />
 			
-			<h3 align="center">Chat Application using PHP Ajax Jquery</h3><br />
+			<h3 align="center">GLB Chat Window</h3><br />
 			<br />
 			<div class="panel panel-default">
-  				<div class="panel-heading">Chat Application Login</div>
+  				<div class="panel-heading">GLB Chat Portal Login</div>
 				<div class="panel-body">
 					<p class="text-danger"><?php echo $message; ?></p>
 					<form method="post">

@@ -2,8 +2,10 @@
 
 //database_connection.php
 
-$connect = new PDO("mysql:host=13.127.204.207;dbname=chat;charset=utf8mb4;", 'root', 'h6lgboiaJTgDwPN2');
+//$connect = new PDO("mysql:host=13.127.204.207;dbname=chat;charset=utf8mb4;", 'root', 'h6lgboiaJTgDwPN2');
+$connect = new PDO("mysql:host=localhost;dbname=chat;charset=utf8mb4;", 'newuser', 'password');
 date_default_timezone_set('Asia/Kolkata');
+
 
 function fetch_user_last_activity($user_id, $connect) {
     $query = "

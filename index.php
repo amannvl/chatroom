@@ -3,9 +3,7 @@
 !-->
 
 <?php
-
 include('database_connection.php');
-
 session_start();
 
 if(!isset($_SESSION['user_id']))
@@ -33,7 +31,7 @@ if(!isset($_SESSION['user_id']))
         <div class="container">
 			<br />
 			
-			<h3 align="center">Chat Application</h3><br />
+			<h3 align="center">GLB Chat Window</h3><br />
 			<br />
 			<div class="row">
 				<div class="col-md-8 col-sm-6">
